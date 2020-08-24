@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Comic+Neue:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+img {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: darkslategrey;
+    box-shadow: 10px 10px 45px -12px rgba(0,0,0,0.52);
+}
+.box {
+    background-color: rgb(255, 255, 255, 0.9);
+    background-image: url('images2/pozadina.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    text-align: center;
+    _padding-top: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 45px -12px rgba(0,0,0,0.52);
+    display: none;
+    z-index: 1;
+    color: #694c7c;
+    font-size: 32px;
+}
+#close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    padding-right: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 960px;
+    min-height: 600px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+.header {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+h3, #attempts {
+    font-size: 40px;
+    background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+.card {
+    cursor: pointer;
+}
+.back {
+    display: none;
+}
+button {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.rotate {
+    -webkit-animation:spin 0.8s linear;
+    -moz-animation:spin 0.8s linear;
+    animation:spin 0.8s linear;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotateY(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateY(180deg); transform:rotateY(180deg); } }
